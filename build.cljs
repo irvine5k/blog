@@ -14,7 +14,7 @@
             [applied-science.js-interop :as j]
             [promesa.core :as p]))
 
-(def site-url "https://kelven.github.io")
+(def site-url "https://irvine5k.netlify.app/")
 (def dist-folder "dist")
 (def template (fs.readFileSync "template.html" "utf8"))
 
