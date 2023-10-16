@@ -119,7 +119,8 @@
                    (path/basename))]
     {:path post-path
      :slug slug
-     :html templated-html}))
+     :html templated-html
+     :frontmatter frontmatter}))
 
 (defn build-index-page [data]
   [:ul.mt-3
