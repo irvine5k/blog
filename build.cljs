@@ -173,6 +173,7 @@
           index-page (srv/render-to-static-markup index-page)
           index-page (build-templated-html "Kelven Galvão" index-page)]
     (fs.writeFile (path/join dist-folder "index.html") index-page)
-    (fs.writeFile (path/join dist-folder "rss.xml") (build-rss-feed posts))))
+    (fs.writeFile (path/join dist-folder "rss.xml") (build-rss-feed posts))
+    (print "build done")))
 
 (build)
